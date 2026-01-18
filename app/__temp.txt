@@ -1,0 +1,20 @@
+
+
+<Pressable
+    //style={{ width: 40, height: 40, backgroundColor: "#00ff00", opacity: 0.6, borderRadius: 10 }}
+    onPress={() => choosePerson(person.id, "notInterested")}
+    style={({ pressed }) => ({
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    marginBottom: 10,
+    height: 40,
+    width: 40,
+    backgroundColor: "#ff0000",
+    borderRadius: 12,
+    opacity: person.status === 0 ? 0.8 : 0.4,
+    })}
+>
+<Text style={{ color: "black", fontWeight: "bold" }}>
+    {person.status === 0 ? "X" : "-"}
+</Text>
+</Pressable>
